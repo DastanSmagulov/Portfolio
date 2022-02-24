@@ -29,3 +29,18 @@ $(document).ready(function(){
         }
     )
 });
+
+const person = {
+    name: prompt('Write your name:'),
+    sayHello: function() {
+        alert(`Welcome to my portfolio page ${this.name[0].toUpperCase()}${this.name.slice(1, this.name.length).toLowerCase()}`)
+    }
+};
+
+person.sayHello();
+
+function play(){
+    var audio = new Audio("/Zoloto - Сверчки (2).mp3");
+    audio.play();
+};
+
